@@ -2,7 +2,7 @@
 
 #Create a Discord bot
 1. Go to https://discord.com/developers/applications
-2. Click on `New Application`
+2. Click on "New Application"
 3. Name you Application
 4. Go to "BOT" section
 5. Click "Add Bot" and then "Yes, do it"
