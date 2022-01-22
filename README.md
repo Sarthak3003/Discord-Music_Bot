@@ -11,5 +11,5 @@
 #Coding and Deploying Bot
 1. Fork the repo
 2. Clone the repo
-3. Create "token.txt" file in your root directory and paste your previously copied Discord Bot "Token key" (toke.txt should only contain your token key
+3. Create "token.txt" file in your root directory and paste your previously copied Discord Bot "Token key" (token.txt should only contain your token key
 3. Run `python main.py`
