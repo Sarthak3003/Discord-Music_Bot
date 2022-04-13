@@ -6,6 +6,7 @@ class music(commands.Cog):
     def __init__(self, client):
       self.client = client
     
+    #this is join command
     @commands.command()
     async def join(self,ctx):
       if ctx.author.voice is None:
@@ -16,10 +17,12 @@ class music(commands.Cog):
       else:
         await ctx.voice_client.move_to(voice_channel)
     
+    #this is disconnect command
     @commands.command()
     async def disconnect(self,ctx):
       await ctx.voice_client.disconnect()
     
+    #this is play command
     @commands.command()
     async def play(self,ctx,url):
       ctx.voice_client.stop()
@@ -32,13 +35,15 @@ class music(commands.Cog):
         url2 = info['formats'][0]['url']
         source = await discord.FFmpegOpusAudio.from_probe(url2, **FFMPEG_OPTIONS)
         vc.play(source)
-
+    
+    #this is pause command
     @commands.command()
     async def pause(self,ctx):
       text1 = "Paused ⏸️"
       await ctx.voice_client.pause()
       await ctx.send(text1)
     
+    #this is resume command
     @commands.command()
     async def resume(self,ctx):
       text2 = "Resumed ▶️"
