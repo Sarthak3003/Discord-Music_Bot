@@ -1,5 +1,7 @@
 # Discord-Music_Bot
 
+``For any queries, feel free to contact me on my email: sarthakcr007@gail.com``
+
 #Create a Discord bot
 1. Go to https://discord.com/developers/applications
 2. Click on "New Application"
